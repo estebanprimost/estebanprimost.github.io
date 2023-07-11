@@ -2,16 +2,18 @@
 
 export interface Props {
   href?: string,
+  title?: string,
   element?: string,
   className?: string
 }
 
-const { href, element: Element = 'span', className = '' } = Astro.props
+const { href, element: Element = 'span', title = '', className = '' } = Astro.props
 
 ---
 
 <a
     href={href}
+    title={title}
     target="_blank"
     rel="nofollow noopener" 
     class={`inline-block font-medium text-skin-accent no-underline hover:decoration-dashed hover:underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0`}

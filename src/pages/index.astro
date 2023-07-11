@@ -1,22 +1,37 @@
 ---
+import { Icon } from 'astro-icon'
+
 import Layout from '../layouts/Layout.astro';
 import WorkEntry from '../components/WorkEntry.astro';
 import Link from '../components/Link.astro';
+
+import { socials } from '../utils/link.ts'
+
 ---
 
 <Layout>
-	<nav class="flex items-center gap-4 bg-slate-200 py-4">
-    <div class="flex flex-1 items-center gap-4">
-      <img class="m-0 h-10 w-10 rounded-full" src="https://media.licdn.com/dms/image/C4E03AQFqogcS4-GfyQ/profile-displayphoto-shrink_800_800/0/1634070618157?e=1694649600&v=beta&t=KBd65pCwBTjzXCgJMwagWkaqRIL_6wS0sd4W_H5TO84" alt="Rounded avatar" crossorigin="anonymous" />
-      <div class="font-semibold">Esteban Primost</div>
+	<nav class="flex flex-col items-center gap-4 bg-slate-200 py-4 pb-0">
+    <div class="flex flex-col flex-1 items-center gap-4">
+      <img class="m-0 h-[120px] w-[120px] rounded-lg" src="/yo.jpeg" alt="Esteban Primost" />
+			<div class='flex flex-col items-start'>
+      	<h2 class='my-0'>Esteban Primost</h2>
+			</div>
     </div>
-    <div>S S S S</div>
+    <div class='flex gap-3'>
+			{
+				socials.filter(social => social.active).map(social => (
+					<Link href={social.href} title={social.linkTitle}>
+						<Icon name={social.icon} class='w-6 h-6' />
+					</Link>
+				))
+			}
+		</div>
   </nav>
 
   <hr class="my-8" />
   
 	<h1>Hola!</h1>
-	<p>Soy Esteban, Licenciado en Sistemas, actualmente trabajando como desarrollador remoto desde <Link href='https://g.co/kgs/NJVZGZ'>Urdinarrain, Entre Ríos, Argentina</Link>.
+	<p>Soy Esteban, Licenciado en Sistemas, actualmente trabajando como desarrollador remoto desde <Link href='https://g.co/kgs/NJVZGZ' title='Urdinarrain, Entre Ríos, Argentina'>Urdinarrain, Entre Ríos, Argentina</Link>.
   <p>Conocé los últimos trabajos que he realizado, los proyectos en los que participé y las herramientas que he usado.</p>
   <p>Gracias por pasar!</p>
 
@@ -26,7 +41,7 @@ import Link from '../components/Link.astro';
 		subtitle='2018 | Presente'
 		link='https://geutstudio.com'
 	>
-		Organización, laboratorio y espacio de amigos, desde donde participo en diferentes proyectos y en diferentes roles. Algunos de los productos más emocionantes son <Link href='https://discover.sher.app'>Sher</Link> o <Link href='https://github.com/geut/permanent-seeder'>Permanent Seeder</Link>.
+		Organización, laboratorio y espacio de amigos, desde donde participo en diferentes proyectos y en diferentes roles. Algunos de los productos más emocionantes son <Link href='https://discover.sher.app' title='Sher'>Sher</Link> o <Link href='https://github.com/geut/permanent-seeder' title='Permanent Seeder'>Permanent Seeder</Link>.
 	</WorkEntry>
 	
 	<WorkEntry
@@ -44,7 +59,7 @@ import Link from '../components/Link.astro';
 			"Hypercore",
   	]}
 	>
-		Plataforma desarrollada desde <Link href='https://geutstudio.com'>GEUT</Link> para streaming de audio en vivo. En este producto hemos experimentado y explotado con mucha pasión el mundo descentralizado. Logramos construir un producto capaz de igualar los servicios de la competencia, reduciendo los costos de infraestructura y mantenimiento.
+		Plataforma desarrollada desde <Link href='https://geutstudio.com' title='GEUT'>GEUT</Link> para streaming de audio en vivo. En este producto hemos experimentado y explotado con mucha pasión el mundo descentralizado. Logramos construir un producto capaz de igualar los servicios de la competencia, reduciendo los costos de infraestructura y mantenimiento.
 	</WorkEntry>
 
 	<WorkEntry
@@ -59,7 +74,7 @@ import Link from '../components/Link.astro';
 			"React"
   	]}
 	>
-		Trabajé desarrollando un editor de texto colaborativo sincronizado mediante CRDT, para <Link href="https://dxos.org/">DXOS</Link>, un kit de desarrollo colaborativo.
+		Trabajé desarrollando un editor de texto colaborativo sincronizado mediante CRDT, para <Link href="https://dxos.org/" title='DXOS'>DXOS</Link>, un kit de desarrollo colaborativo.
 	</WorkEntry>
 	
 	<WorkEntry

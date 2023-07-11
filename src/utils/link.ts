@@ -23,3 +23,55 @@ export const linkTargets = {
   WebRTC: 'https://webrtc.org/',
   Yjs: 'https://github.com/yjs/yjs',
 };
+
+export const socials = [
+  {
+    name: 'Mail',
+    href: 'mailto:esteban.primost@gmail.com',
+    linkTitle: `Send an email to Esteban`,
+    active: true,
+    icon: 'tabler:mail',
+  },
+  {
+    name: 'Github',
+    href: 'https://github.com/estebanprimost',
+    linkTitle: ` Esteban on Github`,
+    active: true,
+    icon: 'tabler:brand-github',
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/estebanprimost',
+    linkTitle: `Esteban on LinkedIn`,
+    active: true,
+    icon: 'tabler:brand-linkedin',
+  },
+  {
+    name: 'Discord',
+    href: 'https://discordapp.com/users/600736334403076126',
+    linkTitle: `Esteban on Discord`,
+    active: true,
+    icon: 'tabler:brand-discord',
+  },
+  {
+    name: 'Twitter',
+    href: 'https://twitter.com/estebanprimost',
+    linkTitle: `Esteban on Twitter`,
+    active: true,
+    icon: 'tabler:brand-twitter',
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/estebanprimost',
+    linkTitle: `Esteban on Instagram`,
+    active: true,
+    icon: 'tabler:brand-instagram',
+  },
+  {
+    name: 'Telegram',
+    href: 'https://github.com/satnaing/astro-paper',
+    linkTitle: `Esteban on Telegram`,
+    active: false,
+    icon: 'tabler:brand-telegram',
+  },
+];
