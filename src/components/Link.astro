@@ -2,10 +2,11 @@
 
 export interface Props {
   href?: string,
-  element?: string
+  element?: string,
+  className?: string
 }
 
-const { href, element: Element = 'span' } = Astro.props
+const { href, element: Element = 'span', className = '' } = Astro.props
 
 ---
 
@@ -13,9 +14,9 @@ const { href, element: Element = 'span' } = Astro.props
     href={href}
     target="_blank"
     rel="nofollow noopener" 
-    class="inline-block font-medium text-skin-accent no-underline hover:decoration-dashed hover:underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+    class={`inline-block font-medium text-skin-accent no-underline hover:decoration-dashed hover:underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0`}
   >
-  <Element class='decoration-dashed text-skin-accent font-medium hover:underline'>
+  <Element class={`decoration-dashed text-skin-accent font-medium hover:underline ${className}`}>
     <slot />
   </Element>
 </a>

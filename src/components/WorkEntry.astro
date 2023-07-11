@@ -12,23 +12,26 @@ export interface Props {
 const { title, subtitle, link, tags = [] } = Astro.props;
 ---
 
-<Link
+<div class='mb-8'>
+  <Link
     href={link}
     element='h3'
+    className='mt-0'
   >
-  {title}
-</Link>
+    {title}
+  </Link>
 
-<div class={`flex items-center space-x-2 opacity-80`}>
-  <span class={`italic text-sm`}>
-    {subtitle}
-  </span>
+  <div class={`flex items-center space-x-2 opacity-80`}>
+    <span class={`italic text-sm`}>
+      {subtitle}
+    </span>
+  </div>
+
+  <p class='mt-2 mb-2'>
+    <slot />
+    {
+      tags.map(tag => <Tag name={tag} />)
+    }
+  </p>
 </div>
-
-<p class='mt-2 mb-2'>
-  <slot />
-  {
-    tags.map(tag => <Tag name={tag} />)
-  }
-</p>
 
