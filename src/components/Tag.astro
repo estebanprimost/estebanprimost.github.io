@@ -1,0 +1,35 @@
+---
+import { linkTargets } from '../utils/link.ts'
+
+export interface Props {
+  name: string;
+  size?: "sm" | "lg";
+}
+
+const { name, size = "sm" } = Astro.props;
+
+---
+
+<div
+  class={`inline-block ${
+    size === "sm" ? "underline-offset-4" : "mx-1 underline-offset-8"
+  }`}
+>
+  <a
+    href={linkTargets[name]}
+    rel="nofollow noopener" 
+    target='blank'
+    class={`${size === "sm" ? "text-sm" : "text-lg"} pr-2 group`}
+  >
+    {name}
+  </a>
+</div>
+
+<style>
+  a {
+    @apply relative underline decoration-dashed hover:text-skin-accent focus-visible:p-1;
+  }
+  a svg {
+    @apply -mr-5 h-6 w-6 scale-95 text-skin-base opacity-80 group-hover:fill-skin-accent;
+  }
+</style>

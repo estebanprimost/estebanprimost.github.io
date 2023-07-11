@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import WorkEntry from '../components/WorkEntry.astro';
+import Link from '../components/Link.astro';
+---
+
+<Layout>
+	<nav class="flex items-center gap-4 bg-slate-200 py-4">
+    <div class="flex flex-1 items-center gap-4">
+      <img class="m-0 h-10 w-10 rounded-full" src="https://avatars.githubusercontent.com/u/1432104?v=4" alt="Rounded avatar" crossorigin="anonymous" />
+      <div class="font-semibold">Esteban Primost</div>
+    </div>
+    <div>S S S S</div>
+  </nav>
+
+  <hr class="my-8" />
+  
+	<h1>Hola!</h1>
+  <p>Este es mi sitio personal para que conozcas los últimos trabajos que he realizado, los proyectos en los que participé y las herramientas que he usado.</p>
+  <p>Gracias por pasar!</p>
+
+	<h2>Trabajos y proyectos</h2>
+	<WorkEntry
+		title='GEUT'
+		subtitle='2018 | Presente'
+		link='https://geutstudio.com'
+	>
+		Organización, laboratorio y espacio de amigos, desde donde participo en diferentes proyectos, con diferentes roles. Algunos de los productos más populares son <Link href='https://discover.sher.app'>Sher</Link> o <Link href='https://github.com/geut/permanent-seeder'>Permanent Seeder</Link>.
+	</WorkEntry>
+	
+	<WorkEntry
+		title='Sher'
+		subtitle='2019 | Presente'
+		link='https://discover.sher.app'
+		tags={[
+			"Javascript",
+			"NodeJS",
+			"PostgreSQL",
+			"Graphql",
+			"React",
+			"Fastify",
+			"Apollo",
+			"Hypercore",
+  	]}
+	>
+		Plataforma desarrollada para streaming de audio en vivo y descentralizado. En este producto hemos experimentado y explotado el mundo descentralizado. Logramos construir un producto capaz de igualar los servicios de la competencia, reduciendo los costos de infraestructura y mantenimiento.
+	</WorkEntry>
+
+	<WorkEntry
+		title='Wireline'
+		subtitle='2018 | 2020'
+		link='https://github.com/wirelineio'
+		tags={[
+			"Javascript",
+			"NodeJS",
+			"CRDT",
+			"Yjs",
+			"React"
+  	]}
+	>
+		Trabajé desarrollando un editor de texto colaborativo sincronizado mediante CRDT, para <Link href="https://dxos.org/">DXOS</Link>, un kit de desarrollo colaborativo.
+	</WorkEntry>
+	
+	<WorkEntry
+		title='Ingenious'
+		subtitle='2017 | 2018'
+		link='https://ingenious.agency/'
+		tags={[
+			"Javascript",
+			"NodeJS",
+			".NET",
+			"Neo4j",
+			"React",
+			"React Native",
+			"WebRTC"
+  	]}
+	>
+		Participé en varios proyectos como desarrollador:
+		<br/>- Aplicación móvil para telemedicina.
+		<br/>- Plataforma de publicidad en tiempo real en buses de linea.
+		<br/>- Sistema online de evaluación, feedback y toma de decisiones, destinado a organizaciones que utilizan sistemas de premios o admisiones, entre otras.
+	</WorkEntry>
+	
+	<WorkEntry
+		title='Subsecretaría de Innovación y experiencia ciudadana'
+		subtitle='2016 | 2017'
+		tags={[
+			"Javascript",
+			"NodeJS",
+			"PHP",
+			"React",
+			"Laravel",
+  	]}
+	>
+		Trabajé como desarrollador en varios proyectos, uno de los mas importantes fué un chat-bot para asistencia al ciudadano para trámites.
+	</WorkEntry>
+
+	<WorkEntry
+		title='Language Trainers'
+		subtitle='2015 | 2016'
+		tags={[
+			"Javascript",
+			"PHP",
+			"Laravel",
+			"MySQL"
+  	]}
+	>
+		Actualización, mejora y mantenimiento de diversas plataformas para la venta online de cursos de lenguages. Migración de sitios y mantenimiento de bases de datos.
+	</WorkEntry>
+</Layout>
