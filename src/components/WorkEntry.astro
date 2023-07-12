@@ -1,6 +1,9 @@
 ---
+import { Icon } from 'astro-icon'
+
 import Tag from './Tag.astro'
 import Link from './Link.astro'
+
 
 export interface Props {
 	title: string;
@@ -23,9 +26,8 @@ const { title, subtitle, link, tags = [] } = Astro.props;
   </Link>
 
   <div class={`flex items-center space-x-2 opacity-80`}>
-    <span class={`italic text-sm`}>
-      {subtitle}
-    </span>
+    <Icon name='tabler:calendar' className='inline-block align-middle w-5' />
+    <span class={`text-sm`}>{subtitle}</span>
   </div>
 
   <p class='mt-2 mb-2'>

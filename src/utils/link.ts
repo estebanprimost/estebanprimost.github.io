@@ -22,6 +22,8 @@ export const linkTargets = {
   Symfony: 'https://symfony.com/',
   WebRTC: 'https://webrtc.org/',
   Yjs: 'https://github.com/yjs/yjs',
+  AWS: 'https://aws.amazon.com/',
+  SST: 'https://sst.dev/',
 };
 
 export const socials = [
