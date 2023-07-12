@@ -1,13 +1,18 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import image from "@astrojs/image";
+import astroI18next from "astro-i18next";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://estebanprimost.github.io',
-  integrations: [tailwind(), image({
-    serviceEntryPoint: '@astrojs/image/sharp',
-  })],
+  integrations: [
+    tailwind(), 
+    image({
+      serviceEntryPoint: '@astrojs/image/sharp',
+    }),
+    astroI18next()    
+  ],
   experimental: {
     assets: true,
   },

@@ -1,4 +1,7 @@
 ---
+import { t } from "i18next"
+import { Trans } from 'astro-i18next/components'
+
 import { Image } from '@astrojs/image/components';
 import { Icon } from 'astro-icon'
 
@@ -41,23 +44,25 @@ import { socials } from '../utils/link'
 
   <hr class="my-8" />
   
-	<h1>Bienvenido</h1>
-	<p>Soy Esteban, Licenciado en Sistemas, actualmente trabajando como desarrollador remoto desde <Link href='https://g.co/kgs/NJVZGZ' title='Urdinarrain, Entre Ríos, Argentina'>Urdinarrain, Entre Ríos, Argentina</Link>.
-  <p>Conocé los últimos trabajos que he realizado, los proyectos en los que participé y las herramientas que he usado.</p>
-  <p>Gracias por pasar!</p>
+	<h1>{t('home.welcome')}</h1>
+	<p>{t('home.about_me_1')} <Link href='https://g.co/kgs/NJVZGZ' title='Urdinarrain, Entre Ríos, Argentina'>Urdinarrain, Entre Ríos, Argentina</Link>.
+  <p>{t('home.about_me_2')}</p>
+  <p>{t('home.about_me_3')}</p>
 
-	<h2>Trabajos y proyectos</h2>
+	<h2>{t('home.works_and_projects')}</h2>
 	<WorkEntry
 		title='GEUT'
-		subtitle='2018 | Presente'
+		subtitle={`2018 | ${t('common.present')}`}
 		link='https://geutstudio.com'
 	>
-		Organización, laboratorio y espacio de amigos, desde donde participo en diferentes proyectos y en diferentes roles. Algunos de los productos más emocionantes son <Link href='https://discover.sher.app' title='Sher'>Sher</Link> o <Link href='https://github.com/geut/permanent-seeder' title='Permanent Seeder'>Permanent Seeder</Link>.
+		{t('work.geut')}
+		<Link href='https://discover.sher.app' title='Sher'>Sher</Link>{t('common.and')} 
+		<Link href='https://github.com/geut/permanent-seeder' title='Permanent Seeder'>Permanent Seeder</Link>.
 	</WorkEntry>
 	
 	<WorkEntry
 		title='Sher'
-		subtitle='2019 | Presente'
+		subtitle={`2019 | ${t('common.present')}`}
 		link='https://discover.sher.app'
 		tags={[
 			"Javascript",
@@ -70,7 +75,7 @@ import { socials } from '../utils/link'
 			"Hypercore",
   	]}
 	>
-		Plataforma desarrollada desde <Link href='https://geutstudio.com' title='GEUT'>GEUT</Link> para streaming de audio en vivo. En este producto hemos experimentado y explotado con mucha pasión el mundo descentralizado. Logramos construir un producto capaz de igualar los servicios de la competencia, reduciendo los costos de infraestructura y mantenimiento.
+			{t('work.sher')}<Link href='https://geutstudio.com' title='GEUT'>GEUT</Link>{t('work.sher_1')}
 	</WorkEntry>
 
 	<WorkEntry
@@ -86,8 +91,14 @@ import { socials } from '../utils/link'
 			"React"
   	]}
 	>
-		Desde <Link href='https://geutstudio.com' title='GEUT'>GEUT</Link> trabajé en colaboración con <Link href='https://sinaptia.dev/' title='Sinaptia'>Sinaptia</Link> como Team Leader + desarrollador FullStack Javascript en un MVP de una plataforma de ciberseguridad, llamada <Link href='https://mekanoid.io/' title='Mekanoid'>Mekanoid</Link>, para la detección de incidencias y automatización de tareas de contingencia.
-	</WorkEntry>
+		{t('work.sinaptia')}
+		<Link href='https://geutstudio.com' title='GEUT'>GEUT</Link>
+		{t('work.sinaptia_1')}
+		<Link href='https://sinaptia.dev/' title='Sinaptia'>Sinaptia</Link>
+		{t('work.sinaptia_2')}
+		<Link href='https://mekanoid.io/' title='Mekanoid'>Mekanoid</Link>
+		{t('work.sinaptia_3')}
+		</WorkEntry>
 
 	<WorkEntry
 		title='Wireline'
@@ -101,7 +112,9 @@ import { socials } from '../utils/link'
 			"React"
   	]}
 	>
-		Trabajé desarrollando un editor de texto colaborativo sincronizado mediante CRDT, para <Link href="https://dxos.org/" title='DXOS'>DXOS</Link>, un kit de desarrollo colaborativo.
+		{t('work.wireline')}
+		<Link href="https://dxos.org/" title='DXOS'>DXOS</Link>
+		{t('work.wireline_1')}
 	</WorkEntry>
 	
 	<WorkEntry
@@ -118,10 +131,13 @@ import { socials } from '../utils/link'
 			"WebRTC"
   	]}
 	>
-		Participé en varios proyectos como desarrollador:
-		<br/>- Aplicación móvil para telemedicina.
-		<br/>- Plataforma de publicidad en tiempo real en buses de linea.
-		<br/>- Sistema online de evaluación, feedback y toma de decisiones, destinado a organizaciones que utilizan sistemas de premios o admisiones, entre otras.
+		{t('work.ingenious')}
+		<br/>
+		{t('work.ingenious_1')}
+		<br/>
+		{t('work.ingenious_2')}
+		<br/>
+		{t('work.ingenious_3')}
 	</WorkEntry>
 	
 	<WorkEntry
@@ -136,7 +152,7 @@ import { socials } from '../utils/link'
 			"Laravel",
   	]}
 	>
-		Trabajé como desarrollador en varios proyectos, uno de los mas importantes fué un chat-bot para asistencia al ciudadano para trámites.
+		{t('work.subsecretaria')}
 	</WorkEntry>
 
 	<WorkEntry
@@ -150,7 +166,7 @@ import { socials } from '../utils/link'
 			"MySQL"
   	]}
 	>
-		Actualización, mejora y mantenimiento de diversas plataformas para la venta online de cursos de lenguages. Migración de sitios y mantenimiento de bases de datos.
+		{t('work.language_trainers')}
 	</WorkEntry>
 	
 	<WorkEntry
@@ -163,13 +179,14 @@ import { socials } from '../utils/link'
 			"SQL Server"
   	]}
 	>
-		Diseño de plataformas para la gestión provincial de obras educativas. Desarrollo de nuevas funcionalidades. Mantenimiento de aplicaciones.
+		{t('work.uep')}
 	</WorkEntry>
 	
 	<WorkEntry
 		title='RPSolutions'
 		subtitle='2011 | 2014'
 		tags={[
+			"Android",
 			"Javascript",
 			"PHP",
 			"Laravel",
@@ -177,7 +194,7 @@ import { socials } from '../utils/link'
 			"CodeIgniter"
   	]}
 	>
-		Coordinación y gestión de proyectos. Desarrollo de aplicaciones móviles en plataforma Android. Supervisión, mantenimiento y soporte.
+		{t('work.rpsolutions')}
 	</WorkEntry>
 	
 	<WorkEntry
@@ -190,7 +207,7 @@ import { socials } from '../utils/link'
 			"SQL Server"
   	]}
 	>
-		Desarrollo y mantenimiento de aplicaciones para el departamento de Sistemas de la organización.
+		{t('work.ucalp')}
 	</WorkEntry>
 	
 	<WorkEntry
@@ -203,7 +220,7 @@ import { socials } from '../utils/link'
 			"PHP"
   	]}
 	>
-		Trabajé en varios proyectos, uno de ellos es una plataforma para la visualización de tecnologías utilizadas en la construcción.
+		{t('work.vmn')}
 	</WorkEntry>
 
 	<WorkEntry
@@ -215,7 +232,7 @@ import { socials } from '../utils/link'
 			"Drupal"
   	]}
 	>
-		Participé como desarrollador para diversos proyectos privados de la consultora.
+		{t('work.am')}
 	</WorkEntry>
 	
 	<WorkEntry
@@ -223,7 +240,7 @@ import { socials } from '../utils/link'
 		link='https://www.info.unlp.edu.ar/'
 		subtitle='2006 | 2007'
 	>
-		Experiencia académica como ayudante y colaborador ad honorem en la cátedra de Programación de Computadoras, de la Facultad de Informática. Soporte a los ingresantes en las actividades de la materia.
+		{t('work.unlp')}
 	</WorkEntry>
 
 	<hr class="my-8" />
