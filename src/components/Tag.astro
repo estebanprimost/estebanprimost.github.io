@@ -2,28 +2,22 @@
 import { linkTargets } from '../utils/link'
 
 export interface Props {
-  name: string;
-  size?: "sm" | "lg";
+  name: string
 }
 
-const { name, size = "sm" } = Astro.props;
+const { name } = Astro.props;
 
 ---
 
-<div
-  class={`inline-block ${
-    size === "sm" ? "underline-offset-4" : "mx-1 underline-offset-8"
-  }`}
+<a
+  href={linkTargets[name]}
+  title={name}
+  rel="nofollow noopener" 
+  target='blank'
+  class='inline-block text-sm group underline-offset-4'
 >
-  <a
-    href={linkTargets[name]}
-    rel="nofollow noopener" 
-    target='blank'
-    class={`${size === "sm" ? "text-sm" : "text-lg"} mr-3 group`}
-  >
-    {name}
-  </a>
-</div>
+  {name}
+</a>
 
 <style>
   a {

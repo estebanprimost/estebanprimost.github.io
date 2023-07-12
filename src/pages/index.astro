@@ -1,4 +1,5 @@
 ---
+import { Image } from '@astrojs/image/components';
 import { Icon } from 'astro-icon'
 
 import Layout from '../layouts/Layout.astro';
@@ -14,7 +15,15 @@ import { socials } from '../utils/link'
 <Layout>
 	<nav class="flex flex-col items-center gap-4 bg-slate-200 py-4 pb-0">
     <div class="flex flex-col flex-1 items-center gap-4">
-      <img class="m-0 h-[120px] w-[120px] rounded-lg object-cover" src={yo} alt="Esteban Primost" />
+			<Image 
+				src={yo} 
+				format="webp"
+				width={200} 
+				height={200}
+				fit='cover'
+				class='m-0 rounded-lg'
+				alt="Esteban Primost" 
+			/>
 			<div class='flex flex-col items-start'>
       	<h2 class='my-0'>Esteban Primost</h2>
 			</div>

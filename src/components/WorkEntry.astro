@@ -31,9 +31,9 @@ const { title, subtitle, link, tags = [] } = Astro.props;
   </div>
 
   <p class='mt-2 mb-2'>
-    <slot />
+    <slot /><br/>
     {
-      tags.map(tag => <Tag name={tag} />)
+      tags.map(tag => <><Tag name={tag} />&nbsp;</>)
     }
   </p>
 </div>
