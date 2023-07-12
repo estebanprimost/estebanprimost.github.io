@@ -1,1 +1,3 @@
-[Go to https://estebanprimost.github.io](https://estebanprimost.github.io)
+<p align="center">
+  <a href="https://estebanprimost.github.io" target="_blank">Esteban Primost</a>
+</p>
