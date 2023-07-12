@@ -3,7 +3,7 @@
 export interface Props {
   href?: string,
   title?: string,
-  element?: string,
+  element?: any,
   className?: string
 }
 
@@ -11,14 +11,25 @@ const { href, element: Element = 'span', title = '', className = '' } = Astro.pr
 
 ---
 
-<a
-    href={href}
-    title={title}
-    target="_blank"
-    rel="nofollow noopener" 
-    class={`inline-block font-medium text-skin-accent no-underline hover:decoration-dashed hover:underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0`}
-  >
-  <Element class={`decoration-dashed text-skin-accent font-medium hover:underline ${className}`}>
-    <slot />
-  </Element>
-</a>
+{
+  href
+    ? (
+    <a
+      href={href}
+      title={title}
+      target="_blank"
+      rel="nofollow noopener" 
+      class={`inline-block font-medium text-skin-accent no-underline hover:decoration-dashed hover:underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0`}
+    >
+    <Element class={`decoration-dashed text-skin-accent font-medium hover:underline ${className}`}>
+      <slot />
+    </Element>
+  </a>
+  )
+  : (
+    <Element class={`text-skin-accent font-medium ${className}`}>
+      <slot />
+    </Element>
+  )
+}
+
