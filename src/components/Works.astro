@@ -1,0 +1,163 @@
+---
+import { t } from "i18next";
+
+import Link from "../components/Link.astro";
+import WorkEntry from "../components/WorkEntry.astro";
+---
+
+<h2>{t("home.works_and_projects")}</h2>
+<p>{t("home.works_and_projects_title")}</p>
+<WorkEntry
+	title="GEUT"
+	subtitle={`2018 | ${t("common.present")}`}
+	link="https://geutstudio.com"
+>
+	{t("work.geut")}
+	<Link href="https://discover.sher.app" title="Sher">Sher</Link>{
+		t("common.and")
+	}
+	<Link
+		href="https://github.com/geut/permanent-seeder"
+		title="Permanent Seeder"
+	>
+		Permanent Seeder
+	</Link>.
+</WorkEntry>
+
+<WorkEntry
+	title="Sher"
+	subtitle={`2019 | ${t("common.present")}`}
+	link="https://discover.sher.app"
+	tags={[
+		"Javascript",
+		"Node.js",
+		"PostgreSQL",
+		"Graphql",
+		"React",
+		"Fastify",
+		"Apollo",
+		"Hypercore",
+	]}
+>
+	{t("work.sher")}<Link href="https://geutstudio.com" title="GEUT">GEUT</Link>{
+		t("work.sher_1")
+	}
+</WorkEntry>
+
+<WorkEntry
+	title="Sinaptia"
+	subtitle="2022 | 2023"
+	link="https://sinaptia.dev/"
+	tags={["Javascript", "Node.js", "Graphql", "AWS", "SST", "React"]}
+>
+	{t("work.sinaptia")}
+	<Link href="https://geutstudio.com" title="GEUT">GEUT</Link>
+	{t("work.sinaptia_1")}
+	<Link href="https://sinaptia.dev/" title="Sinaptia">Sinaptia</Link>
+	{t("work.sinaptia_2")}
+	<Link href="https://mekanoid.io/" title="Mekanoid">Mekanoid</Link>
+	{t("work.sinaptia_3")}
+</WorkEntry>
+
+<WorkEntry
+	title="Wireline"
+	subtitle="2018 | 2020"
+	link="https://github.com/wirelineio"
+	tags={["Javascript", "Node.js", "CRDT", "Yjs", "React"]}
+>
+	{t("work.wireline")}
+	<Link href="https://dxos.org/" title="DXOS">DXOS</Link>
+	{t("work.wireline_1")}
+</WorkEntry>
+
+<WorkEntry
+	title="Ingenious"
+	subtitle="2017 | 2018"
+	link="https://ingenious.agency/"
+	tags={[
+		"Javascript",
+		"Node.js",
+		".NET",
+		"Neo4j",
+		"React",
+		"React Native",
+		"WebRTC",
+	]}
+>
+	{t("work.ingenious")}
+	<br />
+	{t("work.ingenious_1")}
+	<br />
+	{t("work.ingenious_2")}
+	<br />
+	{t("work.ingenious_3")}
+</WorkEntry>
+
+<WorkEntry
+	title="Subsecretaría de Innovación y experiencia ciudadana"
+	link="https://www.gba.gob.ar/gobiernodigital/funciones_y_direcciones"
+	subtitle="2016 | 2017"
+	tags={["Javascript", "Node.js", "PHP", "React", "Laravel"]}
+>
+	{t("work.subsecretaria")}
+</WorkEntry>
+
+<WorkEntry
+	title="Language Trainers"
+	link="https://www.languagetrainers.com/"
+	subtitle="2015 | 2016"
+	tags={["Javascript", "PHP", "Laravel", "MySQL"]}
+>
+	{t("work.language_trainers")}
+</WorkEntry>
+
+<WorkEntry
+	title="Unidad Ejecutora Provincial"
+	subtitle="2012 | 2014"
+	tags={["Javascript", "PHP", "Laravel", "SQL Server"]}
+>
+	{t("work.uep")}
+</WorkEntry>
+
+<WorkEntry
+	title="RPSolutions"
+	subtitle="2011 | 2014"
+	tags={["Android", "Javascript", "PHP", "Laravel", "Symfony", "CodeIgniter"]}
+>
+	{t("work.rpsolutions")}
+</WorkEntry>
+
+<WorkEntry
+	title="Universidad Católica de La Plata"
+	link="https://www.ucalp.edu.ar/"
+	subtitle="2010 | 2011"
+	tags={["Javascript", "PHP", "SQL Server"]}
+>
+	{t("work.ucalp")}
+</WorkEntry>
+
+<WorkEntry
+	title="VMN+"
+	link="#"
+	subtitle="2009 | 2010"
+	tags={["OpenLaszlo", "Adobe Flex", "PHP"]}
+>
+	{t("work.vmn")}
+</WorkEntry>
+
+<WorkEntry
+	title="AM Soluciones"
+	link="https://amsolucionesweb.com/"
+	subtitle="2009"
+	tags={["PHP", "Drupal"]}
+>
+	{t("work.am")}
+</WorkEntry>
+
+<WorkEntry
+	title="Universidad Nacional de La Plata - Facultad de Informática"
+	link="https://www.info.unlp.edu.ar/"
+	subtitle="2006 | 2007"
+>
+	{t("work.unlp")}
+</WorkEntry>

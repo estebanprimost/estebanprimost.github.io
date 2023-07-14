@@ -5,6 +5,7 @@ export const linkTargets = {
   'SQL Server': 'https://www.microsoft.com/sql-server',
   Android: 'https://www.android.com/',
   Apollo: 'https://apollographql.com/',
+  AWS: 'https://aws.amazon.com/',
   CodeIgniter: 'https://www.codeigniter.com/',
   CRDT: 'https://crdt.tech/',
   Drupal: 'https://www.drupal.org/',
@@ -15,16 +16,15 @@ export const linkTargets = {
   Laravel: 'https://laravel.com/',
   MySQL: 'https://www.mysql.com/',
   Neo4j: 'https://neo4j.com/',
-  NodeJS: 'https://nodejs.org/',
+  'Node.js': 'https://nodejs.org/',
   OpenLaszlo: 'https://www.openlaszlo.org/',
   PHP: 'https://php.net/',
   PostgreSQL: 'https://postgresql.org/',
   React: 'https://react.dev/',
+  SST: 'https://sst.dev/',
   Symfony: 'https://symfony.com/',
   WebRTC: 'https://webrtc.org/',
   Yjs: 'https://github.com/yjs/yjs',
-  AWS: 'https://aws.amazon.com/',
-  SST: 'https://sst.dev/',
 };
 
 export const socials = [

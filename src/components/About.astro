@@ -1,0 +1,64 @@
+---
+import { t } from "i18next";
+
+import Link from "../components/Link.astro";
+import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+
+import Trans from "./Trans";
+import { linkTargets } from "../utils/link";
+---
+
+<hr class="my-8 mb-4" />
+
+<div class="flex gap-4 justify-end">
+  <LanguageSwitcher />
+  <ThemeSwitcher />
+</div>
+
+<h1>{t("home.welcome")}</h1>
+
+<p>
+  {t("home.about_me_1")}
+  <Link
+    href="https://g.co/kgs/NJVZGZ"
+    title="Urdinarrain, Entre Ríos, Argentina"
+  >
+    Urdinarrain, Entre Ríos, Argentina
+  </Link>.
+</p>
+<p>
+  {t("home.about_me_2")}
+  <Link href={linkTargets["Javascript"]} title="Javascript">Javascript</Link>
+  {t("home.about_me_3")}
+  <Link href={linkTargets["Node.js"]} title="Node.js">Node.js</Link>
+  {t("common.and")}
+  <Link href={linkTargets.React} title="React">React</Link>
+  {t("home.about_me_4")}
+</p>
+<p>
+  {t("home.about_me_5")}
+</p>
+
+<script>
+  const langMenuButton = document.querySelector("#lang-menu-button");
+  const langMenu = document.querySelector("#lang-menu-menu");
+
+  langMenuButton.onclick = (event) => {
+    event.stopPropagation();
+    langMenu.classList.toggle(
+      "opacity-0",
+      !langMenu.classList.contains("opacity-0")
+    );
+  };
+
+  document.addEventListener("click", (event) => {
+    langMenu.classList.add("opacity-0");
+  });
+</script>
+
+<style>
+  #lang-menu-menu {
+    @apply bg-skin-card;
+  }
+</style>

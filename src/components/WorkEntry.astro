@@ -29,7 +29,7 @@ const { title, subtitle, link, tags = [] } = Astro.props;
     <slot /><br/>
     <span class="opacity-80 mt-2 inline-block">
       <Icon name='tabler:calendar' className='inline-block align-middle w-5 mr-2' />
-      <span class={`text-sm`}>{subtitle}</span>
+      <span class="text-sm align-middle">{subtitle}</span>
     </span><br/>
     {
       tags.length > 0 && (

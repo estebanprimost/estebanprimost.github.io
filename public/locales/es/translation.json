@@ -5,49 +5,42 @@
   },
   "home": {
     "welcome": "Bienvenido",
-    "about_me_1": "Soy Esteban, Licenciado en Sistemas, actualmente trabajando como desarrollador remoto desde ",
-    "about_me_2": "Conocé los últimos trabajos que he realizado, los proyectos en los que participé y las herramientas que he usado.",
-    "about_me_3": "Gracias por pasar!",
-    "works_and_projects": "Trabajos y proyectos"
+    "about_me_1": "Soy Esteban, Licenciado en Sistemas, actualmente viviendo en ",
+    "about_me_2": "El último tiempo he trabajado como desarrollador ",
+    "about_me_3": " senior en ",
+    "about_me_4": " para diferentes clientes y proyectos.",
+    "about_me_5": "Ahora estoy buscando nuevos desafíos y oportunidades para seguir creciendo profesionalmente en roles como Tech Lead, Team Lead o Project Manager.",
+    "works_and_projects": "Trabajos y proyectos",
+    "works_and_projects_title": "Conocé los últimos trabajos que he realizado, los proyectos en los que participé y las herramientas que he usado."
   },
   "work": {
     "geut": "GEUT es una organización, laboratorio y espacio de amigos, desde donde participo en diferentes proyectos y en diferentes roles. Algunos de los productos más emocionantes son: ",
-    
     "sher": "Plataforma desarrollada por ",
     "sher_1": " para streaming de audio en vivo. En este producto hemos experimentado y explotado con mucha pasión el mundo descentralizado. Logramos construir un producto capaz de igualar los servicios de la competencia, reduciendo los costos de infraestructura y mantenimiento.",
-    
     "sinaptia": "Desde ",
     "sinaptia_1": " trabajé en colaboración con ",
     "sinaptia_2": " como team leader + desarrollador full stack Javascript en un MVP de una plataforma de ciberseguridad, llamada ",
     "sinaptia_3": ", para la detección de incidencias y automatización de tareas de contingencia.",
-
     "wireline": "Trabajé desarrollando un editor de texto colaborativo sincronizado mediante CRDT, para ",
     "wireline_1": ", un kit de desarrollo colaborativo y descentralizado.",
-
     "ingenious": "Participé en varios proyectos como desarrollador:",
     "ingenious_1": "- Aplicación móvil para telemedicina.",
     "ingenious_2": "- Plataforma de publicidad en tiempo real en buses de linea.",
     "ingenious_3": "- Sistema online de evaluación, feedback y toma de decisiones, destinado a organizaciones que utilizan sistemas de premios o admisiones, entre otras.",
-
     "subsecretaria": "Trabajé como desarrollador en varios proyectos, uno de los mas importantes fué un chat-bot para asistencia al ciudadano para guía de trámites.",
-
     "language_trainers": "Actualización, mejora y mantenimiento de diversas plataformas para la venta online de cursos de lenguages. Migración de sitios y mantenimiento de bases de datos.",
-
     "uep": "Diseño de plataformas para la gestión provincial de obras educativas. Desarrollo de nuevas funcionalidades. Mantenimiento de aplicaciones.",
-
     "rpsolutions": "Coordinación y gestión de proyectos. Desarrollo de aplicaciones móviles para Android. Supervisión, mantenimiento y soporte.",
-
     "ucalp": "Desarrollo y mantenimiento de aplicaciones para el departamento de Sistemas de la organización.",
-
     "vmn": "Trabajé en varios proyectos, uno de ellos es una plataforma para la visualización de tecnologías utilizadas en la construcción.",
-
     "am": "Participé como desarrollador para diversos proyectos privados de la consultora.",
-
     "unlp": "Experiencia académica como ayudante y colaborador ad honorem en la cátedra de Programación de Computadoras, de la Facultad de Informática. Soporte a los ingresantes en las actividades de la materia."
   },
   "common": {
     "present": "Presente",
-    "or": "o",
-    "and": "y"
+    "or": " o ",
+    "and": " y ",
+    "spanish": "Español",
+    "english": "Inglés"
   }
 }

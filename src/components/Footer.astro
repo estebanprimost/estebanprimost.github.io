@@ -1,0 +1,22 @@
+---
+import { Icon } from "astro-icon";
+
+import Link from "../components/Link.astro";
+
+import { socials } from "../utils/link";
+---
+
+<hr class="my-8" />
+
+<div class="pb-4 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+  <h3 class="my-0">Esteban Primost</h3>
+  <div class='flex gap-3'>
+    {
+      socials.filter(social => social.active).map(social => (
+        <Link href={social.href} title={social.linkTitle}>
+          <Icon name={social.icon} class='w-6 h-6' />
+        </Link>
+      ))
+    }
+  </div>
+</div>
