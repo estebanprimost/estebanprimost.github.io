@@ -1,20 +1,17 @@
 {
-  "site": {
-    "title": "My awesome website!",
-    "description": "Here is the description of my awesome website!"
-  },
   "home": {
     "welcome": "Bienvenido",
     "about_me_1": "Soy Esteban, Licenciado en Sistemas, actualmente viviendo en ",
-    "about_me_2": "El último tiempo he trabajado como desarrollador ",
+    "about_me_2": "El último tiempo he trabajado como Team Lead y desarrollador ",
     "about_me_3": " senior en ",
     "about_me_4": " para diferentes clientes y proyectos.",
-    "about_me_5": "Estoy buscando nuevos desafíos y oportunidades para seguir creciendo profesionalmente en roles como Tech Lead, Team Lead o Project Manager.",
+    "about_me_5": "Estoy buscando nuevos desafíos y oportunidades para seguir creciendo profesionalmente en roles como Tech Lead o Team Lead.",
     "works_and_projects": "Trabajos y proyectos",
-    "works_and_projects_title": "Conocé los últimos trabajos que he realizado, los proyectos en los que participé y las herramientas que he usado."
+    "works_and_projects_title": "Conocé los últimos trabajos que he realizado, los proyectos en los que participé y las herramientas que he usado.",
+    "this_site": "Este sitio"
   },
   "work": {
-    "geut": "GEUT es una organización, laboratorio y espacio de amigos, desde donde participo en diferentes proyectos y en diferentes roles. Algunos de los productos más emocionantes son: ",
+    "geut": "GEUT es una organización y un laboratorio tech/geek, desde donde participo en diferentes proyectos y en diferentes roles. Algunos de los productos más emocionantes son: ",
     "sher": "Plataforma desarrollada por ",
     "sher_1": " para streaming de audio en vivo. En este producto hemos experimentado y explotado con mucha pasión el mundo descentralizado. Logramos construir un producto capaz de igualar los servicios de la competencia, reduciendo los costos de infraestructura y mantenimiento.",
     "sinaptia": "Desde ",
@@ -35,6 +32,12 @@
     "vmn": "Trabajé en varios proyectos, uno de ellos es una plataforma para la visualización de tecnologías utilizadas en la construcción.",
     "am": "Participé como desarrollador para diversos proyectos privados de la consultora.",
     "unlp": "Experiencia académica como ayudante y colaborador ad honorem en la cátedra de Programación de Computadoras, de la Facultad de Informática. Soporte a los ingresantes en las actividades de la materia."
+  },
+  "site": {
+    "this_site_1": "Este sitio lo construí con ",
+    "this_site_2": " y mucho espíritu nerd ",
+    "this_site_3": "Está alojado en GitHub Pages y mediante GitHub Actions configuré un workflow para que se actualice automáticamente.",
+    "this_site_4": "El tema está basado en "
   },
   "common": {
     "present": "Presente",

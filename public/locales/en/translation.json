@@ -1,20 +1,17 @@
 {
-  "site": {
-    "title": "My awesome website!",
-    "description": "Here is the description of my awesome website!"
-  },
   "home": {
     "welcome": "Welcome!",
     "about_me_1": "I'm Esteban, a computer engineer currently living in ",
-    "about_me_2": "Lately I've been working as a ",
+    "about_me_2": "Lately I've been working as a Team Lead and ",
     "about_me_3": " senior developer in ",
     "about_me_4": " for different clients and projects.",
-    "about_me_5": "I'm looking for new challenges and opportunities to continue growing professionally in roles such as Tech Lead, Team Lead or Project Manager.",
+    "about_me_5": "I'm looking for new challenges and opportunities to continue growing professionally in roles such as Tech Lead or Team Lead.",
     "works_and_projects": "Work & Projects",
-    "works_and_projects_title": "These are the latest jobs, the projects, and the tools I've used."
+    "works_and_projects_title": "These are the latest jobs, the projects, and the tools I've used.",
+    "this_site": "This site"
   },
   "work": {
-    "geut": "GEUT is an organization, laboratory and space of friends, from where I participate in different projects and roles. Some of the most exciting products are: ",
+    "geut": "GEUT is an organization and a geek/tech lab, from where I participate in different projects and roles. Some of the most exciting products are: ",
     "sher": "Platform developed by ",
     "sher_1": " for live audio streaming. In this product we have experimented and exploited the decentralized world with great passion. We managed to build a product capable of matching the services of the competition, reducing infrastructure and maintenance costs.",
     "sinaptia": "From ",
@@ -36,12 +33,17 @@
     "am": "I worked as a developer for various private projects.",
     "unlp": "Academic experience as a teaching assistant and ad honorem collaborator for Computer Programming course (Facultad de Informática). Help and support for new students."
   },
+  "site": {
+    "this_site_1": "This site was built with ",
+    "this_site_2": " and a lot of nerd spirit ",
+    "this_site_3": "It's hosted on GitHub Pages and through GitHub Actions I configured a workflow to update it automatically.",
+    "this_site_4": "The theme is based on "
+  },
   "common": {
     "present": "Present",
     "or": " or ",
     "and": " and ",
     "spanish": "Spanish",
     "english": "English"
-  },
-  "superCoolKey": "Une intégration <0>astro</0> d'<1>i18next</1> + quelques composants utilitaires pour vous aider à traduire vos sites astro !"
+  }
 }

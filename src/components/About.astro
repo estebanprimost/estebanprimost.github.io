@@ -5,7 +5,6 @@ import Link from "../components/Link.astro";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import ThemeSwitcher from "./ThemeSwitcher.astro";
 
-import Trans from "./Trans";
 import { linkTargets } from "../utils/link";
 ---
 
@@ -18,16 +17,16 @@ import { linkTargets } from "../utils/link";
 
 <h1>{t("home.welcome")}</h1>
 
-<p>
+<p class="hyphens-auto">
   {t("home.about_me_1")}
-  <Link
-    href="https://g.co/kgs/NJVZGZ"
-    title="Urdinarrain, Entre Ríos, Argentina"
-  >
-    Urdinarrain, Entre Ríos, Argentina
-  </Link>.
+  <Link href="https://g.co/kgs/NJVZGZ" title="Urdinarrain, Argentina">
+    Urdinarrain,
+  </Link>
+  <Link href="https://g.co/kgs/NJVZGZ" title="Urdinarrain, Argentina">
+    Argentina.
+  </Link>
 </p>
-<p>
+<p class="hyphens-auto">
   {t("home.about_me_2")}
   <Link href={linkTargets["Javascript"]} title="Javascript">Javascript</Link>
   {t("home.about_me_3")}
@@ -36,29 +35,6 @@ import { linkTargets } from "../utils/link";
   <Link href={linkTargets.React} title="React">React</Link>
   {t("home.about_me_4")}
 </p>
-<p>
+<p class="hyphens-auto">
   {t("home.about_me_5")}
 </p>
-
-<script>
-  const langMenuButton = document.querySelector("#lang-menu-button");
-  const langMenu = document.querySelector("#lang-menu-menu");
-
-  langMenuButton.onclick = (event) => {
-    event.stopPropagation();
-    langMenu.classList.toggle(
-      "opacity-0",
-      !langMenu.classList.contains("opacity-0")
-    );
-  };
-
-  document.addEventListener("click", (event) => {
-    langMenu.classList.add("opacity-0");
-  });
-</script>
-
-<style>
-  #lang-menu-menu {
-    @apply bg-skin-card;
-  }
-</style>

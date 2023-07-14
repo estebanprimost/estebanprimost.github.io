@@ -1,5 +1,4 @@
 ---
-
 export interface Props {
   href?: string,
   title?: string,
@@ -8,8 +7,7 @@ export interface Props {
   className?: string
 }
 
-const { href, title = '', target = '_blank', element: Element = 'span', className = '' } = Astro.props
-
+const { href, title = href, target = '_blank', element: Element = 'span', className = '' } = Astro.props
 ---
 
 {
@@ -20,7 +18,7 @@ const { href, title = '', target = '_blank', element: Element = 'span', classNam
       title={title}
       target={target}
       rel="nofollow noopener" 
-      class={`inline-block font-medium text-skin-accent no-underline hover:decoration-dashed hover:underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0`}
+      class={`inline-block font-medium text-skin-accent no-underline hover:decoration-dashed hover:underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0 hyphens-auto`}
     >
     <Element class={`decoration-dashed text-skin-accent font-medium hover:underline ${className}`}>
       <slot />

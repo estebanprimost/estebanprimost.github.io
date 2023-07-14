@@ -1,0 +1,28 @@
+---
+import { Icon } from "astro-icon";
+import { t } from "i18next";
+import Link from "./Link.astro";
+---
+
+<h2>{t("home.this_site")}</h2>
+<p>
+  {t("site.this_site_1")}<Link href="https://astro.build">Astro</Link>, <Link
+    href="https://tailwindcss.com"
+  >
+    Tailwind CSS
+  </Link>, <Link href="https://reactjs.org">React</Link>, <Link
+    href="https://www.i18next.com"
+  >
+    i18next
+  </Link>{t("site.this_site_2")}
+  <Icon name="tabler:mood-smile" class="inline w-4 h-4 text-skin-accent" />.
+</p>
+<p>
+  {t("site.this_site_3")}
+</p>
+<p>
+  {t("site.this_site_4")}
+  <Link href="https://github.com/chrismwilliams/astro-theme-cactus">
+    astro-theme-cactus
+  </Link>.
+</p>
