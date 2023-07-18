@@ -1,14 +1,16 @@
 {
   "home": {
     "welcome": "Welcome!",
-    "about_me_1": "I'm Esteban, a computer engineer currently living in ",
+    "about_me_1": "I'm Esteban, a computer engineer with more than 12 years of experience, currently living in ",
     "about_me_2": "Lately I've been working as a Team Lead and ",
     "about_me_3": " senior developer in ",
     "about_me_4": " for different clients and projects.",
     "about_me_5": "I'm looking for new challenges and opportunities to continue growing professionally in roles such as Tech Lead or Team Lead.",
     "works_and_projects": "Work & Projects",
     "works_and_projects_title": "These are the latest jobs, the projects, and the tools I've used.",
-    "this_site": "This site"
+    "education": "Education",
+    "this_site": "This site",
+    "languages": "Languages"
   },
   "work": {
     "geut": "GEUT is an organization and a geek/tech lab, from where I participate in different projects and roles. Some of the most exciting products are: ",
@@ -19,19 +21,23 @@
     "sinaptia_2": " as team leader + full stack Javascript developer in an MVP of a cybersecurity platform, called ",
     "sinaptia_3": ", for the detection of incidents and automation of contingency tasks.",
     "wireline": "I worked developing a collaborative text editor synchronized by CRDT, for ",
-    "wireline_1": ", a collaborative + descentralized development kit.",
+    "wireline_1": ", a collaborative + decentralized development kit.",
     "ingenious": "I participated in several projects as a developer: ",
     "ingenious_1": "- Mobile application for telemedicine.",
     "ingenious_2": "- Real-time advertising platform on line buses.",
     "ingenious_3": "- Online evaluation, feedback and decision-making system, aimed at organizations that use award or admission systems, among others.",
     "subsecretaria": "I worked as a developer in several projects, one of the most important was a chat-bot for citizen procedures assistance.",
     "language_trainers": "Update, improvement and maintenance of various platforms. Migration and database maintenance.",
-    "uep": "Design of platforms for provincial educational works management. Development of new functionalities. Applications maintenance.",
+    "uep": "Design of platforms for provincial educational works management. Development of new functionalities. Application maintenance.",
     "rpsolutions": "Coordination and project management. Development of mobile applications for Android platforms. Supervision, maintenance and support.",
     "ucalp": "Application development and maintenance for UCALP's computer department.",
     "vmn": "I worked on several projects, one of them is a platform for construction technologies visualization.",
     "am": "I worked as a developer for various private projects.",
     "unlp": "Academic experience as a teaching assistant and ad honorem collaborator for Computer Programming course (Facultad de Informática). Help and support for new students."
+  },
+  "education": {
+    "analista": "University Degree obtained at ",
+    "english": "Advanced level"
   },
   "site": {
     "this_site_1": "This site was built with ",
@@ -44,6 +50,10 @@
     "or": " or ",
     "and": " and ",
     "spanish": "Spanish",
-    "english": "English"
+    "english": "English",
+    "download": "Download resume",
+    "contact_me": "Let's talk!",
+    "mail_subject": "Contact from estebanprimost.github.io",
+    "mail_body": "Hi Esteban! Let's talk about your next project 😎."
   }
 }

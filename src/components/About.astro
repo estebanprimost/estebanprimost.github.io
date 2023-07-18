@@ -1,21 +1,44 @@
 ---
+import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
 import { t } from "i18next";
 
-import Link from "../components/Link.astro";
-import LanguageSwitcher from "../components/LanguageSwitcher.astro";
-import ThemeSwitcher from "./ThemeSwitcher.astro";
+import yo from "../assets/yo.jpg";
 
-import { linkTargets } from "../utils/link";
+import Link from "../components/Link.astro";
+
+import { linkTargets, slugify, socials } from "../utils/link";
 ---
+
+<nav class="flex flex-col items-center gap-4 bg-slate-200 pb-0">
+  <div class="flex flex-col flex-1 items-center gap-4">
+    <Image 
+      src={yo} 
+      format="webp"
+      width={200} 
+      height={200}
+      fit='cover'
+      class='m-0 rounded-lg'
+      alt="Esteban Primost" 
+    />
+    <div class='flex flex-col items-start'>
+      <h2 class='my-0'>Esteban Primost</h2>
+    </div>
+  </div>
+  <div class='flex gap-3'>
+    {
+      socials.filter(social => social.active).map(social => (
+        <Link href={`${social.href}${social.name === 'Mail' ? `?subject=${t('common.mail_subject')}&body=${t('common.mail_body')}` : ''}`} title={social.linkTitle}>
+          <Icon name={social.icon} class='w-6 h-6' />
+        </Link>
+      ))
+    }
+  </div>
+</nav>
 
 <hr class="my-8 mb-4" />
 
-<div class="flex gap-4 justify-end">
-  <LanguageSwitcher />
-  <ThemeSwitcher />
-</div>
-
-<h1>{t("home.welcome")}</h1>
+<h1 id={slugify(t("home.welcome"))}>{t("home.welcome")}</h1>
 
 <p class="hyphens-auto">
   {t("home.about_me_1")}
@@ -38,3 +61,8 @@ import { linkTargets } from "../utils/link";
 <p class="hyphens-auto">
   {t("home.about_me_5")}
 </p>
+
+<div class="flex gap-4 mt-8">
+  <Link href={`Esteban Primost.pdf`} title={t('common.download')} className="hover:no-underline bg-skin-accent py-2 px-4 rounded-md text-skin-inverted">{t('common.download')}</Link>
+  <Link href={`${socials[0].href}?subject=${t('common.mail_subject')}&body=${t('common.mail_body')}`} title={t('common.contact_me')} className="hover:no-underline bg-skin-accent py-2 px-4 rounded-md text-skin-inverted">{t('common.contact_me')}</Link>
+</div>

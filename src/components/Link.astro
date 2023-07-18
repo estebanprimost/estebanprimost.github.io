@@ -20,9 +20,7 @@ const { href, title = href, target = '_blank', element: Element = 'span', classN
       rel="nofollow noopener" 
       class={`inline font-medium text-skin-accent no-underline hover:decoration-dashed hover:underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0 hyphens-auto`}
     >
-    <Element class={`decoration-dashed text-skin-accent font-medium hover:underline ${className}`}>
-      <slot />
-    </Element>
+    <Element class={`decoration-dashed text-skin-accent font-medium hover:underline ${className}`}><slot /></Element>
   </a>
   )
   : (

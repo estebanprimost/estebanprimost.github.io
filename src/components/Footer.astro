@@ -4,6 +4,7 @@ import { Icon } from "astro-icon";
 import Link from "../components/Link.astro";
 
 import { socials } from "../utils/link";
+import { t } from "i18next";
 ---
 
 <hr class="my-8" />
@@ -13,7 +14,7 @@ import { socials } from "../utils/link";
   <div class='flex gap-3'>
     {
       socials.filter(social => social.active).map(social => (
-        <Link href={social.href} title={social.linkTitle}>
+      <Link href={`${social.href}${social.name === 'Mail' ? `?subject=${t('common.mail_subject')}&body=${t('common.mail_body')}` : ''}`} title={social.linkTitle}>
           <Icon name={social.icon} class='w-6 h-6' />
         </Link>
       ))

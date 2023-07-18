@@ -1,34 +1,64 @@
 ---
-import { Image } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
+import { t } from "i18next";
 
-import yo from "../assets/yo.jpg";
-import Link from "../components/Link.astro";
-import { socials } from "../utils/link";
+import { slugify, socials } from "../utils/link";
+
+import Link from "./Link.astro";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import ThemeSwitcher from "./ThemeSwitcher.astro";
 ---
 
-<nav class="flex flex-col items-center gap-4 bg-slate-200 py-4 pb-0">
-  <div class="flex flex-col flex-1 items-center gap-4">
-    <Image 
-      src={yo} 
-      format="webp"
-      width={200} 
-      height={200}
-      fit='cover'
-      class='m-0 rounded-lg'
-      alt="Esteban Primost" 
-    />
-    <div class='flex flex-col items-start'>
-      <h2 class='my-0'>Esteban Primost</h2>
+<div class="mb-8">
+  <div class="flex justify-end sm:justify-start items-center text-sm">
+    <div class="hidden sm:flex flex-1 items-center gap-4">
+      {
+        ['home.welcome', 'home.works_and_projects', 'home.education', 'home.languages', 'home.this_site'].map(text => (
+          <Link href={`#${slugify(t(text))}`} target='_self'>
+            {t(text)}
+          </Link>
+        ))
+      }
+    </div>
+    <div class="flex gap-4 justify-end">
+      <LanguageSwitcher />
+      <ThemeSwitcher />
+
+      <!-- Download -->
+      <Link href={`Esteban Primost.pdf`} title={t('common.download')}>
+        <Icon name="tabler:file-download" class="w-6 h-6 text-skin-accent cursor-pointer" />
+      </Link>
+
+      <!-- Menu -->
+      <Icon id="menu-icon" name="tabler:menu-2" class="w-6 h-6 text-skin-accent sm:hidden cursor-pointer transition-all" />
     </div>
   </div>
-  <div class='flex gap-3'>
-    {
-      socials.filter(social => social.active).map(social => (
-        <Link href={social.href} title={social.linkTitle}>
-          <Icon name={social.icon} class='w-6 h-6' />
-        </Link>
-      ))
-    }
+  
+  <div id="menu" class="hidden sm:hidden transition-all">
+    <div class="flex flex-col gap-4">
+      {
+        ['home.welcome', 'home.works_and_projects', 'home.education', 'home.languages', 'home.this_site'].map(text => (
+          <Link href={`#${slugify(t(text))}`} target='_self'>
+            {t(text)}
+          </Link>
+        ))
+      }
+    </div>
   </div>
-</nav>
+</div>
+
+<script>
+  const menuIcon = document.getElementById('menu-icon')
+  const menu = document.getElementById('menu')
+
+  menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('rotate-90')
+    menu.classList.toggle('hidden')
+  })
+
+  document.addEventListener('click', (event: any) => {
+    if (!menuIcon.contains(event.target) && !menu.contains(event.target)) {
+      menuIcon.classList.remove('rotate-90')
+    }
+  })
+</script>

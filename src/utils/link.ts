@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 export const linkTargets = {
   '.NET': 'https://dotnet.microsoft.com/en-us/',
   'Adobe Flex': 'https://helpx.adobe.com/security/products/flex.html',
@@ -30,7 +32,7 @@ export const linkTargets = {
 export const socials = [
   {
     name: 'Mail',
-    href: 'mailto:esteban.primost@gmail.com',
+    href: `mailto:esteban.primost@gmail.com`,
     linkTitle: `Mail`,
     active: true,
     icon: 'tabler:mail',
@@ -71,3 +73,14 @@ export const socials = [
     icon: 'tabler:brand-instagram',
   }
 ];
+
+export function slugify(text: string): string {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+}

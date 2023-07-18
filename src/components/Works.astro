@@ -3,9 +3,13 @@ import { t } from "i18next";
 
 import Link from "../components/Link.astro";
 import WorkEntry from "../components/WorkEntry.astro";
+import { slugify } from "../utils/link";
 ---
 
-<h2>{t("home.works_and_projects")}</h2>
+<h2 id={slugify(t("home.works_and_projects"))}>
+	{t("home.works_and_projects")}
+</h2>
+
 <p>{t("home.works_and_projects_title")}</p>
 <WorkEntry
 	title="GEUT"
@@ -20,7 +24,7 @@ import WorkEntry from "../components/WorkEntry.astro";
 		href="https://github.com/geut/permanent-seeder"
 		title="Permanent Seeder"
 	>
-		Permanent Seeder
+		{"Permanent Seeder"}
 	</Link>.
 </WorkEntry>
 
