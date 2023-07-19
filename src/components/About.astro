@@ -12,26 +12,37 @@ import { linkTargets, slugify, socials } from "../utils/link";
 
 <nav class="flex flex-col items-center gap-4 bg-slate-200 pb-0">
   <div class="flex flex-col flex-1 items-center gap-4">
-    <Image 
-      src={yo} 
+    <Image
+      src={yo}
       format="webp"
-      width={200} 
+      width={200}
       height={200}
-      fit='cover'
-      class='m-0 rounded-lg'
-      alt="Esteban Primost" 
+      fit="cover"
+      class="m-0 rounded-lg"
+      alt="Esteban Primost"
     />
-    <div class='flex flex-col items-start'>
-      <h2 class='my-0'>Esteban Primost</h2>
+    <div class="flex flex-col items-start">
+      <h2 class="my-0">Esteban Primost</h2>
     </div>
   </div>
-  <div class='flex gap-3'>
+  <div class="flex gap-3">
     {
-      socials.filter(social => social.active).map(social => (
-        <Link href={`${social.href}${social.name === 'Mail' ? `?subject=${t('common.mail_subject')}&body=${t('common.mail_body')}` : ''}`} title={social.linkTitle}>
-          <Icon name={social.icon} class='w-6 h-6' />
-        </Link>
-      ))
+      socials
+        .filter((social) => social.active)
+        .map((social) => (
+          <Link
+            href={`${social.href}${
+              social.name === "Mail"
+                ? `?subject=${t("common.mail_subject")}&body=${t(
+                    "common.mail_body"
+                  )}`
+                : ""
+            }`}
+            title={social.linkTitle}
+          >
+            <Icon name={social.icon} class="w-6 h-6" />
+          </Link>
+        ))
     }
   </div>
 </nav>
@@ -63,6 +74,20 @@ import { linkTargets, slugify, socials } from "../utils/link";
 </p>
 
 <div class="flex text-sm gap-4 mt-8">
-  <Link href={`Esteban Primost.pdf`} title={t('common.download')} className="hover:no-underline bg-skin-accent py-2 px-4 rounded-md text-skin-inverted">{t('common.download')}</Link>
-  <Link href={`${socials[0].href}?subject=${t('common.mail_subject')}&body=${t('common.mail_body')}`} title={t('common.contact_me')} className="hover:no-underline bg-skin-accent py-2 px-4 rounded-md text-skin-inverted">{t('common.contact_me')}</Link>
+  <Link
+    href={`Esteban Primost.pdf`}
+    title={t("common.download")}
+    className="hover:no-underline bg-skin-accent py-2 px-4 rounded-md text-skin-inverted"
+  >
+    {t("common.download")}
+  </Link>
+  <Link
+    href={`${socials[0].href}?subject=${t("common.mail_subject")}&body=${t(
+      "common.mail_body"
+    )}`}
+    title={t("common.contact_me")}
+    className="hover:no-underline bg-skin-accent py-2 px-4 rounded-md text-skin-inverted"
+  >
+    {t("common.contact_me")}
+  </Link>
 </div>
