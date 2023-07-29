@@ -1,6 +1,5 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, sharpImageService } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-import image from "@astrojs/image";
 import astroI18next from "astro-i18next";
 
 import react from "@astrojs/react";
@@ -8,13 +7,14 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://estebanprimost.github.io',
-  integrations: [tailwind(), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
-  }), astroI18next(), react()],
+  integrations: [tailwind(), astroI18next(), react()],
   trailingSlash: "always",
   experimental: {
-    assets: true,
-    redirects: true
+    assets: true
   },
-  compressHTML: true
+  compressHTML: true,
+  image: {
+    // Example: Enable the Sharp-based image service
+    service: sharpImageService(),
+  },
 });

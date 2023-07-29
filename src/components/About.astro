@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import { Icon } from "astro-icon";
 import { t } from "i18next";
 
@@ -17,8 +17,7 @@ import { linkTargets, slugify, socials } from "../utils/link";
       format="webp"
       width={200}
       height={200}
-      fit="cover"
-      class="m-0 rounded-lg"
+      class="m-0 rounded-lg object-cover w-[200px] h-[200px]"
       alt="Esteban Primost"
     />
     <div class="flex flex-col items-start">
@@ -29,7 +28,7 @@ import { linkTargets, slugify, socials } from "../utils/link";
     {
       socials
         .filter((social) => social.active)
-        .map((social) => (
+        .map(({ svgIcon: SvgIcon, ...social }) => (
           <Link
             href={`${social.href}${
               social.name === "Mail"
@@ -40,7 +39,8 @@ import { linkTargets, slugify, socials } from "../utils/link";
             }`}
             title={social.linkTitle}
           >
-            <Icon name={social.icon} class="w-6 h-6" />
+            {social.icon && <Icon name={social.icon} class="w-6 h-6" />}
+            {SvgIcon && <SvgIcon />}
           </Link>
         ))
     }
