@@ -15,38 +15,41 @@ Let’s build great products.
 
 ## Contact
 
-* [Email](mailto:esteban.primost@gmail.com)
+- esteban.primost@gmail.com
 
-* [geut](https://www.geutstudio.com/team/esteban)
+- [Website](https://estebanprimost.github.io)
 
-* [GitHub](https://github.com/estebanprimost) ⋅
-[LinkedIn](https://www.linkedin.com/in/estebanprimost) ⋅
-[Discord](https://discordapp.com/users/600736334403076126) ⋅
-[X](https://X.com/estebanprimost) ⋅
-[Instagram](https://www.instagram.com/estebanprimost)
+- [geut](https://www.geutstudio.com/team/esteban)
 
+- [GitHub](https://github.com/estebanprimost) ⋅
+  [LinkedIn](https://www.linkedin.com/in/estebanprimost) ⋅
+  [Discord](https://discordapp.com/users/600736334403076126) ⋅
+  [X](https://X.com/estebanprimost) ⋅
+  [Instagram](https://www.instagram.com/estebanprimost)
 
 ## Work & Projects
 
 A summary of my most recent roles, projects, and the technologies I've worked with.
 
 ### [geut](https://geutstudio.com)
+
 **2018 – Present**
 
 _geut_ is a geek-driven tech lab where I work across multiple projects, wearing different hats depending on the stage and needs of each product. My role spans from hands-on engineering to technical leadership, with a strong focus on building real, usable products.
 
 Some of the products we've been building:
 
-* [**Sher**](https://sher.fm)\
-Decentralized live audio streaming platform.
-* [**Tuqui**](https://tuqui.app)\
-Gift platform built for the Latin American market. **Actively evolving**
-* [**Permanent Seeder**](https://github.com/geut/permanent-seeder)\
-High-performance super seeder for hyperdrives. **Open source**.
+- [**Sher**](https://sher.fm)\
+  Decentralized live audio streaming platform.
+- [**Tuqui**](https://tuqui.app)\
+  Gift platform built for the Latin American market. **Actively evolving**
+- [**Permanent Seeder**](https://github.com/geut/permanent-seeder)\
+  High-performance super seeder for hyperdrives. **Open source**.
 
 ---
 
 ### [Alliants](https://alliants.com)
+
 **2023 – 2025**
 
 I contributed to the development of a platform for creating surveys focused on young students. I worked across the stack, moving between **backend engineering** and **frontend development** depending on the needs of the product and the team.
@@ -58,6 +61,7 @@ Serverless · AWS · Node.js · PostgreSQL · Nuxt · Vue.js · Tailwind CSS
 ---
 
 ### [Sher](https://discover.sher.fm)
+
 **2019 – 2023**
 
 A platform developed by GEUT for **live audio streaming**. In this project, we explored and embraced the decentralized ecosystem, building a product capable of competing with similar services while significantly **reducing infrastructure and maintenance costs**.
@@ -67,6 +71,7 @@ JavaScript · Node.js · PostgreSQL · GraphQL · React · Fastify · Apollo · 
 ---
 
 ### [Sinaptia / Mekanoid](https://mekanoid.io)
+
 **2022 – 2023**
 
 I worked as **Team Lead and Full Stack JavaScript Developer** on the MVP of a **cybersecurity platform** focused on incident detection and automated contingency actions.
@@ -78,6 +83,7 @@ JavaScript · Node.js · GraphQL · AWS · SST · React
 ---
 
 ### [Wireline / DXOS](https://dxos.org)
+
 **2018 – 2020**
 
 Worked on the development of a **collaborative text editor** synchronized using **CRDTs**, as part of the DXOS ecosystem — a toolkit for building collaborative and decentralized applications.
@@ -87,6 +93,7 @@ JavaScript · Node.js · CRDT · Yjs · React
 ---
 
 ### [Ingenious](https://ingenious.agency/)
+
 **2017 – 2018**
 
 Participated as a developer in several projects, including:
@@ -100,6 +107,7 @@ JavaScript · Node.js · .NET · Neo4j · React · React Native · WebRTC
 ---
 
 ### Subsecretaria de Innovación y Experiencia Ciudadana
+
 **2016 – 2017**
 
 Worked on several government projects, including a **chatbot designed to assist citizens with administrative procedures**.
@@ -109,6 +117,7 @@ JavaScript · Node.js · PHP · React · Laravel
 ---
 
 ### [Language Trainers](https://www.languagetrainers.com/)
+
 **2015 – 2016**
 
 Worked on platform improvements, feature updates, and long-term maintenance, including database migrations and system optimizations.
@@ -118,6 +127,7 @@ JavaScript · PHP · Laravel · MySQL
 ---
 
 ### Unidad Ejecutora Provincial
+
 **2012 – 2014**
 
 Designed and developed platforms for managing provincial educational infrastructure projects, including ongoing feature development and maintenance.
@@ -127,6 +137,7 @@ JavaScript · PHP · Laravel · SQL Server
 ---
 
 ### RPSolutions
+
 **2011 – 2014**
 
 Handled project coordination, Android application development, and system supervision, maintenance, and support.
@@ -136,6 +147,7 @@ Android · JavaScript · PHP · Laravel · Symfony · CodeIgniter
 ---
 
 ### Universidad Católica de La Plata (UCALP)
+
 **2010 – 2011**
 
 Application development and maintenance for the university's IT department.
@@ -145,6 +157,7 @@ JavaScript · PHP · SQL Server
 ---
 
 ### [VMN+](https://www.linkedin.com/company/vmnplus)
+
 **2009 – 2010**
 
 Worked on multiple projects, including a platform focused on **construction technology visualization**.
@@ -154,6 +167,7 @@ OpenLaszlo · Adobe Flex · PHP
 ---
 
 ### [AM Soluciones](https://amsolucionesweb.com)
+
 **2009**
 
 Worked as a developer on several private projects.
@@ -163,27 +177,29 @@ PHP · Drupal
 ---
 
 ### [Universidad Nacional de La Plata (UNLP) — School of Informatics](https://www.info.unlp.edu.ar)
+
 **2006 – 2007**
 
 Served as a **teaching assistant and ad honorem collaborator** for the Computer Programming course, supporting students during their first steps in software development.
 
 ## Participations, Events, and Workshops
 
-* [Web3 Summit](https://2019.web3summit.com/) — Berlin, Germany · August 2019  
+Below is a selection of key conferences, meetups, and collaborative events where I've participated, spoken, or contributed workshops.
+
+- [Web3 Summit](https://2019.web3summit.com/) — Berlin, Germany · August 2019  
   International conference focused on decentralized technologies, cryptography, and Web3 ecosystems.
 
-* [Data Terra Nemo](https://dtn.is/) — Berlin, Germany · May 2019  
+- [Data Terra Nemo](https://dtn.is/) — Berlin, Germany · May 2019  
   Experimental gathering exploring peer-to-peer systems, decentralization, and alternative network models.
 
-* [NodeConf Argentina](https://nodeconf.com.ar) — Buenos Aires, Argentina · October 2018  
+- [NodeConf Argentina](https://nodeconf.com.ar) — Buenos Aires, Argentina · October 2018  
   Conference dedicated to the Node.js ecosystem, best practices, and real-world applications.
 
-* [JSDay Uruguay](http://day.js.uy/) — Montevideo, Uruguay · November 2017  
+- [JSDay Uruguay](http://day.js.uy/) — Montevideo, Uruguay · November 2017  
   JavaScript-focused conference covering frontend, backend, and emerging web technologies.
 
-* [NodeConf Argentina](https://nodeconf.com.ar) — Buenos Aires, Argentina · November 2016  
+- [NodeConf Argentina](https://nodeconf.com.ar) — Buenos Aires, Argentina · November 2016  
   Participation in talks and workshops centered around Node.js and scalable JavaScript architectures.
 
-* [LaPlataJS Meetups](https://laplatajs.github.io/meetups) — La Plata, Argentina · October 2016  
-  Talk and workshop: *Introduction to GraphQL* and first hands-on experience with the technology.
-
+- [LaPlataJS Meetups](https://laplatajs.github.io/meetups) — La Plata, Argentina · October 2016  
+  Talk and workshop: _Introduction to GraphQL_ and first hands-on experience with the technology.
