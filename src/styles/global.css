@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Mulish Variable", "sans-serif";
+  --font-serif: "Libre Baskerville", "serif";
+}
+
+a {
+  @apply underline-offset-4;
+}

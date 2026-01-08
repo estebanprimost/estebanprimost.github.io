@@ -1,20 +1,17 @@
-import { defineConfig, sharpImageService } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-import astroI18next from "astro-i18next";
+// @ts-check
+import { defineConfig } from 'astro/config';
 
-import react from "@astrojs/react";
+import tailwindcss from '@tailwindcss/vite';
+
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://estebanprimost.github.io',
-  integrations: [tailwind(), astroI18next(), react()],
-  trailingSlash: "always",
-  experimental: {
-    assets: true
+
+  vite: {
+    plugins: [tailwindcss()]
   },
-  compressHTML: true,
-  image: {
-    // Example: Enable the Sharp-based image service
-    service: sharpImageService(),
-  },
+
+  integrations: [mdx()]
 });

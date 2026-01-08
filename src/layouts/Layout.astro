@@ -1,92 +1,29 @@
 ---
-import i18next from "i18next";
-
-import "../styles/base.css";
-import ThemeProvider from "../components/ThemeProvider.astro";
-
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const socialImageURL = new URL("/esteban.jpg", Astro.url).href;
+import "../styles/global.css";
+import "@fontsource-variable/mulish";
+import "@fontsource/libre-baskerville";
 ---
 
-<!DOCTYPE html>
-<html lang={i18next.language}>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Esteban Primost</title>
-
-		<!-- Google Font -->
-		<link
-			rel="preload"
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-			as="style"
-			onload="
-			this.onload = null; this.rel = 'stylesheet'
-			"
-		/>
-		<noscript>
-			<link
-				href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-				rel="stylesheet"
-				type="text/css"
-			/>
-		</noscript>
-
-		<!-- Icons / Favicon -->
-		<link rel="icon" href="/favicon.ico" sizes="any" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="canonical" href={canonicalURL} />
-
-		<!-- Primary Meta Tags -->
-		<meta name="title" content="Esteban Primost" />
-		<meta name="description" content="Esteban Primost personal site" />
-		<meta name="author" content="Esteban Primost" />
-
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Esteban Primost" />
-		<meta property="og:description" content="Esteban Primost personal site" />
-		<meta property="og:url" content={canonicalURL} />
-		<meta property="og:site_name" content="Esteban Primost" />
-		<meta property="og:locale" content="Esteban Primost" />
-		<meta property="og:image" content={socialImageURL} />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={canonicalURL} />
-		<meta property="twitter:title" content="Esteban Primost" />
-		<meta
-			property="twitter:description"
-			content="Esteban Primost  personal site"
-		/>
-		<meta property="twitter:image" content={socialImageURL} />
-	</head>
-	<body>
-		<ThemeProvider />
-		<main class="container mx-auto p-4 max-w-2xl">
-			<div class="prose dark:prose-invert max-w-full">
-				<slot />
-			</div>
-		</main>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base target="_blank" />
+    <meta name="description" content="Esteban Primost personal site" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Esteban Primost</title>
+  </head>
+  <body>
+    <main class="container mx-auto px-4 py-8">
+      <article
+        class="prose prose-lg prose-headings:font-serif prose-headings:font-normal prose-headings:text-slate-900 dark:prose-headings:text-slate-100 mx-auto"
+      >
+        <slot />
+      </article>
+    </main>
+  </body>
 </html>
-<style is:global>
-	/* :root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	} */
-</style>
