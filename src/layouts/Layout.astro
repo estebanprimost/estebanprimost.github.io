@@ -2,13 +2,16 @@
 import "../styles/global.css";
 import "@fontsource-variable/mulish";
 import "@fontsource/libre-baskerville";
+
+const ogDescription =
+  "I’m Esteban, a Computer Systems Engineer with 15+ years of experience building and scaling software products. Let’s build great things.";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <base target="_blank" />
-    <meta name="description" content="Esteban Primost personal site" />
+    <meta name="description" content={ogDescription} />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -16,6 +19,24 @@ import "@fontsource/libre-baskerville";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Esteban Primost</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Esteban Primost" />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/me.jpeg" />
+    <meta property="og:url" content="https://estebanprimost.github.io/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Esteban Primost" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Esteban Primost" />
+    <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content="/me.jpeg" />
+    <meta name="twitter:site" content="@estebanprimost" />
   </head>
   <body class="dark:bg-slate-900 dark:text-slate-50">
     <main class="container mx-auto px-4 py-8">
